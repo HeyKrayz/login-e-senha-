@@ -1,0 +1,27 @@
+from colorama import init, Fore
+
+init()
+
+print(Fore.BLUE + 'faça seu cadastro')
+user_cadastro = input('crie um nick único: ')
+vv1 = input('confirme com sim: ')
+if vv1.strip().lower() == 'sim':
+    print(f'certo então seu nome será {user_cadastro}')
+    print(f'agora {user_cadastro}, crie uma senha única!')
+    neymar2012 = input('senha: ')
+
+    print('agora faça login na conta')
+    meninoney = input('coloque seu nick: ')
+    if meninoney == user_cadastro:
+        print('o nick é existente!')
+
+        champions = input('coloque sua senha: ')
+        if champions == neymar2012:
+            print('senha correta!')
+            print(f'seja bem-vindo {user_cadastro}')
+        else:
+            print('senha incorreta, tente de novo!')
+    else:
+        print('não foi esse nick que você usou no cadastro!')
+else:
+    print('erro! tente novamente')
